@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url(imagen/escritorio-oficina-espacio-trabajo-fondo-mesa_31965-2305.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculadora{
+    padding: 15px;
+    border-radius:20px;
+    margin-top:100px;
+}
+
+#container-calculadora{
+    width: 400px;
+    height: 520px;
+    background-color: #BFBFBF;
+    border: solid;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px black;
+}
+
+/*Pantalla*/
+.pantalla{
+    background-color: black;
+    text-align: end;
+    font-size: 10px;
+    color: white;
+    border-radius: 6px;
+    width: 350px;
+    height: 120px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.marca{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: start;
+}
+
+.numeroserie{
+    font-size: 10px;
+    margin-right: 10px;
+    text-align: end;
+}
+
+/*Display*/
+#display{
+    margin-left: 20px;
+    width: 320px;
+    height: 70px;
+    background-color: #bdbdbd;
+    align-items: center;
+    border-radius: 3px;
+    position: relative;
+} 
+
+.visor{    
+    position: absolute;
+    background-color: rgb(120, 120, 120);
+    width: 290px;
+    height: 50px;
+    border-radius: 3px;
+    margin: 10px;
+    top: 10;
+    left: 3px;
+    box-shadow: 2px 2px 3px rgb(120, 120, 120);
+}
+
+.visor p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#screen{
+    background-color: rgb(128, 128, 128);
+    text-align: end;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 10px;
+    font-size: 20px;
+    border-color: #000000;
+}
+
+/*Botones*/
+#teclado{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding-top: 20px;
+    margin-left: 10px;
+    width: 380px;
+}
+
+button{
+    margin: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    border: solid #0000;
+    padding: 10px 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px black;
+}
+
+button:active{
+    background-color: rgb(30, 30, 30);
+}
+
+.igual{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row: 5/7;
+    align-self: stretch;
+}
+
+.numero{
+    background-color: #424342;
+}
+
+.numero:active{
+    background-color: rgb(30, 30, 30) !important;
+}
+
+.operador:active{
+    background-color: rgb(30, 30, 30) !important;
+}
+
+/* .operador{
+    background-color: #8C5178;
+} */
+
+/*Pie de pagina*/
+.autor h5{
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}

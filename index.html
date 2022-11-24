@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imagen/2374370.png">
+    <title>Calculadora Cientifica</title>
+</head>
+
+<body>
+    <main class="container">
+        <section id="calculadora">
+            <!-- Pantalla -->
+            <div id="container-calculadora" class="operadores">
+                <div class="pantalla">
+                    <div class="marca">CASIO</div>
+                    <div class="numeroserie">DX-140ST</div>
+                    <div id="display">
+                        <div class="visor">
+                            <input id="screen" type="text" placeholder="0"></input>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="teclado">
+                    <button class="btn" type="button">(</button>
+                    <button class="btn" type="button">)</button>
+                    <button type="button" onclick="fact()">x!</button>
+                    <button type="button" onclick="square()">x²</button>
+                    <button type="button" onclick="sqrt()">√</button>                    
+                    <button type="button" onclick="sqrt()">√<sup>n</sup></button>
+
+                    <button type="button" onclick="sin()">sin</button>
+                    <button type="button" onclick="cos()">cos</button>
+                    <button type="button" onclick="tan()">tg</button>
+
+                    <button type="button" onclick="qubbed()">x³</button>
+                    <button type="button" onclick="sqrt3()">³√</button>                    
+                    <button type="button" onclick="pow()">x<sup>n</sup></button>
+
+                    <button class="btn numero" type="button" style="background-color: #424342">1</button>
+                    <button class="btn numero" type="button" style="background-color: #424342">2</button>
+                    <button class="btn numero" type="button" style="background-color: #424342">3</button>
+                    
+                    <button class="btn" type="button">/</button>
+                    <button class="btn" type="button">%</button>
+                    <button type="button" onclick="ln()">ln</button>
+                    
+                    <button class="btn numero" type="button" style="background-color: #424342">4</button>
+                    <button class="btn numero" type="button" style="background-color: #424342">5</button>
+                    <button class="btn numero" type="button" style="background-color: #424342">6</button>
+
+                    <button class="btn" type="button">*</button>
+                    <button type="button" onclick="log()">log</button>
+                    <button type="button" onclick="e()">e</button>
+                    
+                    <button class="btn numero" type="button" style="background-color: #424342">7</button>
+                    <button class="btn numero" type="button" style="background-color: #424342">8</button>
+                    <button class="btn numero" type="button" style="background-color: #424342">9</button>
+                                 
+                    <button class="btn" type="button">-</button>
+                    <button id="ac" type="button" style="background-color: #8C5178" onclick="screen.value=''">AC</button>
+                    <button class="btn" type="button" style="background-color: #424342">.</button>
+
+                    <button class="btn numero" type="button">0</button>
+                    <button class="numero" type="button" onclick="pi()">π</button>
+                    <button class="btn" type="button">+</button>
+                    
+                    <button type="button" style="background-color: #8C5178" onclick="backspc()">MR</button>
+                    <button id="eval" class="igual" type="button" onclick="screen.value=eval(screen.value)">=</button>
+                </div>
+                
+                <div class="autor">
+                    <h5>&COPY; Gisela Colmeiro</h5>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
