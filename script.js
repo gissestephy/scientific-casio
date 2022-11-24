@@ -4,9 +4,6 @@ var btn = document.querySelectorAll('.btn');
 for (item of btn) {
     item.addEventListener('click', (e) => {
         btntext = e.target.innerText;
-    for (item of btn) {
-        item.addEventListener('click', (e) => {
-            btntext = e.target.innerText;
 
         if (btntext == '×') {
             btntext = '*';
@@ -75,7 +72,6 @@ function fact() {
         f = f * i;
     }
 
-<<<<<<< HEAD
     i = i - 1;
 
     screen.value = f;
@@ -84,8 +80,3 @@ function fact() {
 function backspc() {
     screen.value = screen.value.substr(0, screen.value.length - 1);
 }
-=======
-    function backspc() {
-        screen.value = screen.value.substr(0, screen.value.length - 1);
-    }
->>>>>>> f70a2990b4ec70ac933c15016aa1acdbec250739
